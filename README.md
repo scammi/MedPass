@@ -33,6 +33,6 @@ Emergency rooms can be messy, especially if there is a patient that is having a 
 - [ ] It will be taken to a page that uses stellar viewer to access the hash 
 - [x] Information is downloaded from IPFS and displayed.
 
-Work need to be done on the stellar client side.
+Work is needs to be done on the stellar client side.
 
 #### View
