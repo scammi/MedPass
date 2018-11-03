@@ -3,8 +3,10 @@ Medical passport safely stores medical relevant information for emergencies.
 
 #### The big picture
 The advancements in technology have made it possible to gather the information we produce. From the analysis of this data we can obtain insights, witch, in turn, make it very valuable. Businesses are intelligently using it for profit, such as google and facebook. 
-  The practices of such business have raised the questions, who owns the information? arent they monopolizing it? are they to trust with our data. I believe, we, the source, are the owners, are entitled to do as we wish with the information we produce. We should be able to exchange it for services, keep it private or sell it for different porpuses. 
-  They have monopolized the gathering, giving them to much power, and absolute power absolutely corrupts. They are not to trust, especially with our delicate medical information. We as owners should be in control, taking power back, empowering the individual.MedPass is a very small step, on a very long journey of owning your information. 
+    
+   The practices of such business have raised the questions, who owns the information? arent they monopolizing it? are they to trust with our data. I believe, we, the source, are the owners, are entitled to do as we wish with the information we produce. We should be able to exchange it for services, keep it private or sell it for different porpuses. 
+    
+   They have monopolized the gathering, giving them to much power, and absolute power absolutely corrupts. They are not to trust, especially with our delicate medical information. We as owners should be in control, taking power back, empowering the individual.MedPass is a very small step, on a very long journey of owning your information. 
 
 #### Functions
 MedPass is a WebApp that stores on IPFS a small file with medical relevant information for emergencies and makes it available on the fly with a QR code. Helping your physician make faster and better decision.
