@@ -9,26 +9,28 @@ The advancements in technology have made it possible to gather the information w
 #### Functions
 MedPass is a WebApp that stores on IPFS a small file with medical relevant information for emergencies and makes it available on the fly with a QR code. Helping your physician make faster and better decision.
   The QR code can be embedded on a bracelet, necklace, tattoo, or even on an inplated on an NFC. A tag will specify that it should be scan in case of an emergency. So scanning the code will give access to the information, such as:
- -Medications
- -Present disease
- -Past disease
- -Last words
- -Type of blood
- -Emergency number
- -Name
- -Insurance number
- -ETC.
+- Medications
+- Present disease
+- Past disease
+- Last words
+- Type of blood
+- Emergency number
+- Name
+- Insurance number
+- ETC.
 
 #### Imagine
 Emergency rooms can be messy, especially if there is a patient that is having a profuse hemorrhage. If the loos of blood is sufficient, a transfusion might be needed. For such transfusion  you need to know the type of blood, running such a test takes only a few minutes, but there is no time to lose. Here is where MedPass would be useful, giving the type of blood instantly.
 
 #### How ?
--You will access a webpage, where you fill a form with your medical data. 
--The information will be push and pin to IPFS network. 
--The hash will be place in a stellar transaction 
--A QR code will be generated with the stellar transaction 
--In an emergency, the doctor will scan the QR code 
--It will be taken to a page that uses stellar viewer to access the hash 
--Information is downloaded from IPFS and displayed.
+- [x] You will access a webpage, where you fill a form with your medical data. 
+- [x] The information will be push and pin to IPFS network. 
+- [ ] The hash will be place in a stellar transaction 
+- [ ] A QR code will be generated with the stellar transaction 
+- [ ] In an emergency, the doctor will scan the QR code 
+- [ ] It will be taken to a page that uses stellar viewer to access the hash 
+- [x] Information is downloaded from IPFS and displayed.
+
+Work need to be done on the stellar client side.
 
 #### View
