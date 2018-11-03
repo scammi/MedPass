@@ -1,0 +1,17 @@
+#body, html {
+    text-align: center;    
+    position: relative;
+    background: #EEEEEE;
+}
+#title{
+    font-family: "Helvetica Neue";
+    text-align: center;   
+    color: #f44336;
+}
+#link1{
+    padding: 2% 2%;
+}
+#qrcode{
+    display: flex;
+    justify-content: center;
+}

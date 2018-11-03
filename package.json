@@ -1,0 +1,28 @@
+{
+  "name": "MedPass",
+  "version": "1.0.0",
+  "description": "MedPass",
+  "main": "example1.js",
+  "scripts": {
+    "start": "http-server -c-1 -p 12345 public",
+    "compile": "browserify src/app.js -o public/js/app.js -d"
+  },
+  "author": "Cammi Santiago",
+  "license": "MIT",
+  "dependencies": {
+    "browserify": "^16.2.3",
+    "http-server": "^0.11.1",
+    "ipfs": "^0.32.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scammi/MedPass.git"
+  },
+  "keywords": [
+    "MedPass"
+  ],
+  "bugs": {
+    "url": "https://github.com/scammi/MedPass/issues"
+  },
+  "homepage": "https://github.com/scammi/MedPass#readme"
+}
