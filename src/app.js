@@ -5,7 +5,32 @@ var links;
 function myFunction() {
     //Initializes node
     const IPFS = require('ipfs')
-    const node = new IPFS()
+
+    const options = {
+     "API": {
+        "HTTPHeaders": {
+            "Access-Control-Allow-Origin": [
+                "*"
+            ],
+            "Access-Control-Allow-Methods": [
+                "GET",
+                "POST"
+            ],
+            "Access-Control-Allow-Headers": [
+                "Authorization"
+            ],
+            "Access-Control-Expose-Headers": [
+                "Location"
+            ],
+            "Access-Control-Allow-Credentials": [
+                "true"
+            ]
+        }
+     }
+    }
+
+
+    const node = new IPFS(options);
 
     node.on('ready', async () => {
     const version = await node.version()
@@ -17,13 +42,10 @@ function myFunction() {
       })
      console.log('Added file:', filesAdded[0].path, filesAdded[0].hash)
      
-    //Makes creates link to file added
+    //Creates link to file added
      document.getElementById("link").innerHTML= "https://ipfs.io/ipfs/"+filesAdded[0].hash
      links = document.getElementById("link").innerHTML   
-     node.stop(() => {
-        console.log("done")
-        })
-            
+
     //Creates Qr     
     new QRCode(document.getElementById("qrcode"), links);
         

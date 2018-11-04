@@ -4,7 +4,7 @@
   "description": "MedPass",
   "main": "example1.js",
   "scripts": {
-    "start": "http-server -c-1 -p 12345 public",
+    "start": "http-server -c-1 -p 5001 public",
     "compile": "browserify src/app.js -o public/js/app.js -d"
   },
   "author": "Cammi Santiago",
