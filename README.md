@@ -37,3 +37,6 @@ Work needs to be done on the stellar client side.
 
 #### View
 [![medpaspig.png](https://i.postimg.cc/9QyCnZ2B/medpaspig.png)](https://postimg.cc/xXjwkkck)
+See the uploaded file: 
+
+https://ipfs.io/ipfs/QmS6V7obJj9JCs9MnZWqdDxFNWtoBv7BLwHcBdmeyqruqK
