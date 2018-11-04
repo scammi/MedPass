@@ -2,16 +2,19 @@
 <html>
     <head>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet">    
     </head>
     <body>
-        <div id="main">
-            <h1 id="title">MedPass</h1>
-        </div>  
-        <input type="text" id="textfield">
-        <button id="boton">Submit</button>
-        <div id="link1"><a id="link" href="" ></a></div>
-        <div id="qrcode"></div>
-        
+        <div id="center" >
+            <h1 id="title" >MedPass</h1>
+            <p id="p"> Fill the information and click on submit to uploat to IPFS</p>
+            <textarea id="textfield"  rows="20" cols="90" maxlength="200" wrap="hard"></textarea>
+            <div id="">
+                <button id="boton">Submit</button>
+            </div>
+            <div id="link1"><a id="link" href="" ></a></div>
+            <div id="qrcode"></div>
+        </div>
         <script src="js/app.js"></script>
         <script src="js/qrcode.js"></script>
     </body>

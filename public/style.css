@@ -1,17 +1,31 @@
 #body, html {
-    text-align: center;    
-    position: relative;
+    display: flex;
+    flex-direction: row;    
     background: #EEEEEE;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+}
+#center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 #title{
-    font-family: "Helvetica Neue";
+  
     text-align: center;   
     color: #f44336;
 }
 #link1{
     padding: 2% 2%;
+    justify-content: center;
+
 }
 #qrcode{
     display: flex;
     justify-content: center;
+    text-align: center;
+}
+#boton{
+    
+
 }
