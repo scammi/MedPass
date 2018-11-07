@@ -3,14 +3,21 @@
   "version": "1.0.0",
   "description": "MedPass",
   "main": "example1.js",
+  "homepage": "https://scammi.github.io/MedPass",
+    
   "scripts": {
-    "start": "http-server -c-1 -p 5001 public",
-    "compile": "browserify src/app.js -o public/js/app.js -d"
+    "start": "http-server -c-1 -p 12345 public",
+    "compile": "browserify src/app.js -o public/js/app.js -d",
+    "build": "browserify src/app.js -o public/js/app.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d public"
+     
   },
   "author": "Cammi Santiago",
   "license": "MIT",
   "dependencies": {
     "browserify": "^16.2.3",
+    "gh-pages": "^2.0.1",
     "http-server": "^0.11.1",
     "ipfs": "^0.32.3"
   },
@@ -23,6 +30,5 @@
   ],
   "bugs": {
     "url": "https://github.com/scammi/MedPass/issues"
-  },
-  "homepage": "https://github.com/scammi/MedPass#readme"
+  }
 }
