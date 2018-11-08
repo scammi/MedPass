@@ -1,12 +1,14 @@
-document.getElementById("boton").addEventListener("click", myFunction);
 
 var links;
+console.log(document.getElementById("one").value);
 
+document.getElementById("boton").addEventListener("click", myFunction);
 function myFunction() {
     //Initializes node
     const IPFS = require('ipfs')
 
     const options = {
+     
      "API": {
         "HTTPHeaders": {
             "Access-Control-Allow-Origin": [
@@ -29,7 +31,6 @@ function myFunction() {
      }
     }
 
-
     const node = new IPFS(options);
 
     node.on('ready', async () => {
@@ -50,7 +51,5 @@ function myFunction() {
     new QRCode(document.getElementById("qrcode"), links);
         
     });
-    
-   
 }
 
