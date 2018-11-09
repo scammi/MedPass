@@ -4,14 +4,12 @@
   "description": "MedPass",
   "main": "example1.js",
   "homepage": "https://scammi.github.io/MedPass",
-    
   "scripts": {
     "start": "http-server -c-1 -p 12345 public",
     "compile": "browserify src/app.js -o public/js/app.js -d",
     "build": "browserify src/app.js -o public/js/app.js",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d public"
-     
   },
   "author": "Cammi Santiago",
   "license": "MIT",
