@@ -5,50 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../../../favicon.ico">
-
+  
     <title>MedPass</title>
 
     <!-- Bootstrap core CSS -->
     <link href="bootstrap.min.css" rel="stylesheet">
-
     <!-- Custom styles for this template -->
     <link href="form-validation.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet">    
     </head>
     <body class="bg-light">
-
         <div class="container">
-        <div class="py-5 text-center">
-            <img class="d-block mx-auto mb-4" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+        <div class="py-3 text-center">
             <h2>MedPass</h2>
-            <p class="lead">MedPass is a WebApp that stores on IPFS a small file with medical relevant information for emergencies and makes it available on the fly with a QR code. Helping your physician make faster and better decision. The QR code can be embedded on a bracelet, necklace, tattoo, or even on an inplated on an NFC. A tag will specify that it should be scan in case of an emergency. So scanning the code will give access to the information.</p>
-          </div>
+            <p class="text-muted"> Thank you for cheking out my work. </p>
+            <p class="text-muted"> You may see the <a href="https://github.com/scammi/MedPass">source code</a> and see the rest of my progress. </p>
+            <hr class="mb-4">
+            <p class="lead">WebApp that stores on IPFS a small file with medical relevant information for emergencies and makes it available on the fly with a QR code. Helping your physician make faster and better decision.</p>
+        </div>
+        <hr class="mb-4">
+        <div class="container">         
+            <div class="mb-3">
+                  <label for="email">Fill with your information</label>
+                  <textarea class="form-control" id="textfield" rows="17">
+Name:
 
-          <div class="container">         
+Health insurance:
 
-                <div class="mb-3">
-                  <label for="email">Email <span class="text-muted">(Optional)</span></label>
-                  <textarea class="form-control" id="textfield" rows="20"></textarea>
-                </div>
+Allergies:
 
-                  </div>
-                <hr class="mb-4">
-                <button class="btn btn-primary btn-lg btn-block" type="buton">Upload</button>
-              </form>
-            </div>
-            <div id="link1"><a id="link" href="" ></a></div>
-            <div id="qrcode"></div>
-          </div>
-          
-           
+Current disease:
+
+Past disease:
+
+TypeBlood:
+
+Current Medications:
+
+Emergency Contact:
+
+                  </textarea>
+            </div>    
+            <hr class="mb-4">
+            <button class="btn btn-primary btn-lg btn-block" type="boton" id="boton">Upload to IPFS</button>
+            <div class= "py-5 text-center" id="link1"><a id="link" href="" ></a></div>
+            <img style="display: flex; justify-content: center; text-align: center;" id="qrcode"></img>
+  
+        </div>
           <footer class="my-5 pt-5 text-muted text-center text-small">
-            <p class="mb-1">&copy; 2017-2018 Company Name</p>
+            <p class="mb-1">&copy; 2018 Medpass</p>
             <ul class="list-inline">
-              <li class="list-inline-item"><a href="#">Privacy</a></li>
-              <li class="list-inline-item"><a href="#">Terms</a></li>
-              <li class="list-inline-item"><a href="#">Support</a></li>
+              <li class="list-inline-item"><a href=">scammi@gmail.com"</a>Santiago Cammi</li>
+              <li class="list-inline-item"><a href="https://github.com/scammi/MedPass">GitHub</a></li>
+              <li class="list-inline-item"><a href="https://pioneer.app/join/MedPassport">Pioneer</a></li>
             </ul>
           </footer>
          </div>
