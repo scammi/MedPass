@@ -1,6 +1,5 @@
 
 var links;
-console.log(document.getElementById("one").value);
 
 document.getElementById("boton").addEventListener("click", myFunction);
 function myFunction() {
