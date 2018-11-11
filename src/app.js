@@ -7,7 +7,7 @@ function myFunction() {
     const IPFS = require('ipfs')
 
     const options = {
-     
+
      "API": {
         "HTTPHeaders": {
             "Access-Control-Allow-Origin": [
@@ -34,21 +34,24 @@ function myFunction() {
 
     node.on('ready', async () => {
     const version = await node.version()
-    
+
     //Adds file to ipfs
     const filesAdded = await node.files.add({
         path: 'text.txt',
         content: Buffer.from(document.getElementById("textfield").value)
       })
      console.log('Added file:', filesAdded[0].path, filesAdded[0].hash)
-     
+
     //Creates link to file added
      document.getElementById("link").innerHTML= "https://ipfs.io/ipfs/"+filesAdded[0].hash
-     links = document.getElementById("link").innerHTML   
+     links = document.getElementById("link").innerHTML
 
-    //Creates Qr     
-    new QRCode(document.getElementById("qrcode"), links);
-        
+    //Creates Qr
+    var qrdiv = document.getElementById("qrcode")
+    if (qrdiv.hasChildNodes()) {
+        qrdiv.removeChild(qrdiv.childNodes[0]);
+    }
+    new QRCode(qrdiv, links);
+
     });
 }
-
