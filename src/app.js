@@ -1,4 +1,3 @@
-
 var links;
 
 document.getElementById("boton").addEventListener("click", myFunction);
@@ -48,10 +47,9 @@ function myFunction() {
 
     //Creates Qr
     var qrdiv = document.getElementById("qrcode")
-    if (qrdiv.hasChildNodes()) {
-        qrdiv.removeChild(qrdiv.childNodes[0]);
-    }
-    new QRCode(qrdiv, links);
-
+    new QRCode(qrdiv, links)
+    var imgsrc = document.getElementsByTagName("img")[0].src
+    var url = imgsrc.replace(/^data:image\/[^;]+/, 'data:application/octet-stream')
+    document.getElementById("downloadLink").href = url
     });
 }
