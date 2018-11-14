@@ -45,11 +45,22 @@ function myFunction() {
      document.getElementById("link").innerHTML= "https://ipfs.io/ipfs/"+filesAdded[0].hash
      links = document.getElementById("link").innerHTML
 
-    //Creates Qr
+    //
+    var qrlink = document.getElementById("downloadLink")
     var qrdiv = document.getElementById("qrcode")
+    //Creates Qr
     new QRCode(qrdiv, links)
-    var imgsrc = document.getElementsByTagName("img")[0].src
-    var url = imgsrc.replace(/^data:image\/[^;]+/, 'data:application/octet-stream')
-    document.getElementById("downloadLink").href = url
+
+    setTimeout(makeLink, 1000)
+
+
     });
+
+    function makeLink(){
+      var qrlink = document.getElementById("downloadLink")
+      var imgsrc = document.getElementsByTagName("img")[0].src
+      qrlink.href = imgsrc
+      qrlink.innerHTML = "Click here to downloar your QRcode"
+      console.log(imgsrc)
+    }
 }
