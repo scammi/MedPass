@@ -8,7 +8,7 @@
     <!-- Bootstrap core CSS -->
     <link href="bootstrap/bootstrap.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet">
     </head>
     <body class="bg-light">
         <div class="container">
@@ -20,7 +20,7 @@
             <p class="lead">WebApp that stores on IPFS a small file with medical relevant information for emergencies and makes it available on the fly with a QR code. Helping your physician make faster and better decision.</p>
         </div>
         <hr class="mb-4">
-        <div class="container">         
+        <div class="container">
             <div class="mb-3">
                   <label>Fill with your information</label>
                   <textarea class="form-control" id="textfield" rows="17">
@@ -41,13 +41,15 @@ Current Medications:
 Emergency Contact:
 
                   </textarea>
-            </div>    
+          </div>
             <hr class="mb-4">
             <button class="btn btn-primary btn-lg btn-block" type="boton" id="boton">Upload to IPFS</button>
             <p class="text-muted text-small"> Patient, may take a few minutes to load. </p>
-            <div class= "py-5 text-center lead " id="link1"><a id="link" href="" ></a></div>
-            <div style="display: flex; justify-content: center; text-align: center;" id="qrcode"></div>
-        </div>
+            <div class= "container py-5 text-center lead"><a id="link" href="" target="_blank"></a></div>
+            <div class= "py-2 text-center lead"><a class=" text-center" id="downloadLink"  Download="qrcodes"></a></div>
+            <div style="display: flex; justify-content: center; " id="qrcode">
+            </div>
+
           <footer class="my-5 pt-5 text-muted text-center text-small">
             <p class="mb-1">&copy; 2018 Medpass</p>
             <ul class="list-inline">
