@@ -30,7 +30,6 @@ function medPass() {
     const node = new IPFS(options);
     //starts
     node.on('ready', async () => {
-    const version = await node.version()
     //Adds file to ipfs
     const filesAdded = await node.files.add({
         path: 'text.txt',
@@ -47,11 +46,10 @@ function medPass() {
         qrdiv.innerHTML =''
       }
       new QRCode(qrdiv, links)
-
-
-     setTimeout(makeDownloadLink, 1000)
+      //gives time qrcode maker to render the image
+      setTimeout(makeDownloadLink, 1000)
       });
-
+      //grabs src from qr code and copies it to download link
     function makeDownloadLink(){
       var qrlink = document.getElementById("downloadLink")
       var imgsrc = document.getElementsByTagName("img")[0].src
