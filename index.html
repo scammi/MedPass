@@ -14,37 +14,33 @@
         <div class="container">
         <div class="py-3 text-center">
             <h2>MedPass</h2>
-            <p class="text-muted"> Thank you for cheking out my work. </p>
-            <p class="text-muted"> You are welcome to see the <a href="https://github.com/scammi/MedPass">source code</a> and read about the project <a href="https://medium.com/@santiagocammi">here</a>. </p>
+            <p class="text-muted"> Gracias por participar en el beta. </p>
+            <p class="text-muted"> Pueden ver el <a href="https://github.com/scammi/MedPass">source code</a> y leer mas sobre el trabajo <a href="https://medium.com/@santiagocammi">aqui</a>. </p>
             <hr class="mb-4">
-            <p class="lead">WebApp that stores on IPFS a small file with medical relevant information for emergencies and makes it available on the fly with a QR code. Helping your physician make faster and better decision.</p>
+            <p class="lead">Aplicación web que almacena información médica relevante en emergencias y la vuelve rápidamente disponible al médico de guardia, haciendo que éste pueda tomar mejores decisiones con mayor velocidad.</p>
         </div>
         <hr class="mb-4">
         <div class="container">
             <div class="mb-3">
                   <label>Fill with your information</label>
-                  <textarea class="form-control" id="textfield" rows="17">
-Name:
+                  <textarea class="form-control" id="textfield" rows="14">
+Alergias:
 
-Health insurance:
+Enfermedad Actual:
 
-Allergies:
+Enfermedad pasada:
 
-Current disease:
+Grupo sanguineo:
 
-Past disease:
+Medicacion Actual:
 
-TypeBlood:
-
-Current Medications:
-
-Emergency Contact:
+Contacto de emergencias:
 
                   </textarea>
           </div>
             <hr class="mb-4">
-            <button class="btn btn-primary btn-lg btn-block" type="boton" id="boton">Upload to IPFS</button>
-            <p class="text-muted text-small"> Patient, may take a few minutes to load. </p>
+            <button class="btn btn-primary btn-lg btn-block" type="boton" id="boton">Subir informacion a IPFS</button>
+            <p class="text-muted text-small"> Copie y pegue el link, o escane el QR </p>
             <div class= "container py-5 text-center lead"><a id="link" href="" target="_blank"></a></div>
             <div class= "py-2 text-center lead"><a class=" text-center" id="downloadLink"  Download="qrcodes"></a></div>
             <div style="display: flex; justify-content: center; " id="qrcode">
@@ -62,7 +58,6 @@ Emergency Contact:
 
         </div>
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
         <script src="bootstrap/popper.min.js"></script>
         <script src="bootstrap/bootstrap.min.js"></script>
         <script src="bootstrap/holder.min.js"></script>

@@ -109596,11 +109596,8 @@ function Node (value, prev, next, list) {
 
 },{}],757:[function(require,module,exports){
 (function (Buffer){
-
-
 document.getElementById("boton").addEventListener("click", medPass);
 var IPFS = require('ipfs-api')
-
 
 function medPass() {
     const ipfs = new IPFS({ host: "ipfs.infura.io", port: 5001, protocol: "https" })
@@ -109620,7 +109617,6 @@ function medPass() {
     })
     }
 
-
 function addQrLink(fileAdded){
   //Creates link to file added
    document.getElementById("link").innerHTML= "https://ipfs.infura.io/ipfs/"+ fileAdded
@@ -109636,7 +109632,6 @@ function addQrLink(fileAdded){
     setTimeout(makeDownloadLink, 1000)
 
 }
-
 
 //grabs src from qr code and copies it to download link
 function makeDownloadLink(){
