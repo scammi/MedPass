@@ -109602,7 +109602,8 @@ var IPFS = require('ipfs-api')
 function medPass() {
     const ipfs = new IPFS({ host: "ipfs.infura.io", port: 5001, protocol: "https" })
 
-    var toStore = document.getElementById('textfield').value
+    document.getElementById('love').innerHTML = document.getElementById('textfield').value
+    var toStore = document.getElementById('toUp').innerHTML
     ipfs.add(Buffer.from(toStore), function (err, res) {
       if (err || !res) {
         return console.error('ipfs add error', err, res)
