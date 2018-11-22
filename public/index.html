@@ -21,23 +21,44 @@
         </div>
         <hr class="mb-4">
         <div class="container">
-            <div class="mb-3">
-                  <label>Fill with your information</label>
-                  <textarea class="form-control" id="textfield" rows="14">
-Alergias:
+          <h4 class="mb-4">Complete: </h4>
+          <form class="needs-validation" novalidate>
+              <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <label for="firstName">Nombre y apellido</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="" value="" required>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="lastName">Fecha de nacimiento</label>
+                    <input type="text" class="form-control" id="fechaDeNacimiento" placeholder="" value="" required>
+                  </div>
+              </div>
+              <div class="mb-3">
+              <label for="address">Obra Social </label>
+              <input type="text" class="form-control" id="Obra Social" placeholder="" required>
+              </div>
+              <div class="mb-3">
+              <label for="address">Medicacion</label>
+              <input type="text" class="form-control" id="Medicacion" placeholder="" required>
+              </div>
+              <div class="mb-3">
+              <label for="address">Enfermedad actual</label>
+              <input type="text" class="form-control" id="enfermedadActual" placeholder="Agudas y cronica" required>
+              </div>
+              <div class="mb-3">
+              <label for="address">Enfermedades pasadas</label>
+              <input type="text" class="form-control" id="enfermedadesPasadas" placeholder="" required>
+              </div>
+              <div class="mb-3">
+              <label for="address">Grupo sanguineo</label>
+              <input type="text" class="form-control" id="grupoSanguineo" placeholder="" required>
+              </div>
+              <label for="address">Notas</label>
+              <div class="mb-3">
+                    <textarea class="form-control" id="Notas" rows="7"></textarea>
+              </div>
+        </form>
 
-Enfermedad Actual:
-
-Enfermedad pasada:
-
-Grupo sanguineo:
-
-Medicacion Actual:
-
-Contacto de emergencias:
-
-                  </textarea>
-          </div>
             <hr class="mb-4">
             <button class="btn btn-primary btn-lg btn-block" type="boton" id="boton">Subir informacion a IPFS</button>
             <p class="text-muted text-small"> Copie y pegue el link, o escane el QR </p>
@@ -56,10 +77,10 @@ Contacto de emergencias:
           </footer>
          </div>
 
-         <div style="display:">
+         <div style="display:none">
            <div id ="toUp">
              <h1 style="color:red" >MedPass</h1>
-             <p id="love" > Esto es un parrafo </p>
+             <p id="love">  </p>
             </div>
          </div>
 
