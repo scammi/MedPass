@@ -109597,12 +109597,22 @@ function Node (value, prev, next, list) {
 },{}],757:[function(require,module,exports){
 (function (Buffer){
 document.getElementById("boton").addEventListener("click", medPass);
-var IPFS = require('ipfs-api')
 
+var IPFS = require('ipfs-api')
 function medPass() {
     const ipfs = new IPFS({ host: "ipfs.infura.io", port: 5001, protocol: "https" })
 
-    document.getElementById('love').innerHTML = document.getElementById('textfield').value
+    //take from from place it in toUp
+    document.getElementById('toUp-nombre').innerHTML = document.getElementById('nombre').value
+    document.getElementById('toUp-fechaDeNacimiento').innerHTML = document.getElementById('fechaDeNacimiento').value
+    document.getElementById('toUp-obraSocial').innerHTML = document.getElementById('form-obraSocial').value
+    document.getElementById('toUp-medicacion').innerHTML = document.getElementById('form-medicacion').value
+    document.getElementById('toUp-enfermedadActual').innerHTML = document.getElementById('form-enfermedadActual').value
+    document.getElementById('toUp-enfermedadPasada').innerHTML = document.getElementById('form-enfermedadesPasadas').value
+    document.getElementById('toUp-grupoSanguineo').innerHTML = document.getElementById('form-grupoSanguineo').value
+    document.getElementById('toUp-notas').innerHTML = document.getElementById('form-notas').value
+
+
     var toStore = document.getElementById('toUp').innerHTML
     ipfs.add(Buffer.from(toStore), function (err, res) {
       if (err || !res) {
@@ -109618,9 +109628,10 @@ function medPass() {
     })
     }
 
-function addQrLink(fileAdded){
+//makes links: ipfs link and download qr link
+function addQrLink(hashAdded){
   //Creates link to file added
-   document.getElementById("link").innerHTML= "https://ipfs.infura.io/ipfs/"+ fileAdded
+   document.getElementById("link").innerHTML= "https://ipfs.infura.io/ipfs/"+ hashAdded
    var links = document.getElementById("link").innerHTML
    var qrlink = document.getElementById("downloadLink")
    var qrdiv = document.getElementById("qrcode")

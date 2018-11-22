@@ -26,36 +26,36 @@
               <div class="row">
                   <div class="col-md-6 mb-3">
                     <label for="firstName">Nombre y apellido</label>
-                    <input type="text" class="form-control" id="nombre" placeholder="" value="" required>
+                    <input type="text" class="form-control" id="nombre" >
                   </div>
                   <div class="col-md-6 mb-3">
                     <label for="lastName">Fecha de nacimiento</label>
-                    <input type="text" class="form-control" id="fechaDeNacimiento" placeholder="" value="" required>
+                    <input type="text" class="form-control" id="fechaDeNacimiento">
                   </div>
               </div>
               <div class="mb-3">
-              <label for="address">Obra Social </label>
-              <input type="text" class="form-control" id="Obra Social" placeholder="" required>
+              <label>Obra Social </label>
+              <input type="text" class="form-control" id="form-obraSocial">
               </div>
               <div class="mb-3">
-              <label for="address">Medicacion</label>
-              <input type="text" class="form-control" id="Medicacion" placeholder="" required>
+              <label>Medicacion</label>
+              <input type="text" class="form-control" id="form-medicacion">
               </div>
               <div class="mb-3">
-              <label for="address">Enfermedad actual</label>
-              <input type="text" class="form-control" id="enfermedadActual" placeholder="Agudas y cronica" required>
+              <label>Enfermedad actual</label>
+              <input type="text" class="form-control" id="form-enfermedadActual" placeholder="Agudas y cronica">
               </div>
               <div class="mb-3">
-              <label for="address">Enfermedades pasadas</label>
-              <input type="text" class="form-control" id="enfermedadesPasadas" placeholder="" required>
+              <label>Enfermedades pasadas</label>
+              <input type="text" class="form-control" id="form-enfermedadesPasadas" >
               </div>
               <div class="mb-3">
-              <label for="address">Grupo sanguineo</label>
-              <input type="text" class="form-control" id="grupoSanguineo" placeholder="" required>
+              <label>Grupo sanguineo</label>
+              <input type="text" class="form-control" id="form-grupoSanguineo">
               </div>
-              <label for="address">Notas</label>
+              <label>Notas</label>
               <div class="mb-3">
-                    <textarea class="form-control" id="Notas" rows="7"></textarea>
+                    <textarea class="form-control" id="form-notas" rows="7"></textarea>
               </div>
         </form>
 
@@ -80,15 +80,18 @@
          <div style="display:none">
            <div id ="toUp">
              <h1 style="color:red" >MedPass</h1>
-             <p id="love">  </p>
+             <p id="toUp-nombre">  </p>
+             <p id="toUp-fechaDeNacimiento">  </p>
+             <p id="toUp-obraSocial">  </p>
+             <p id="toUp-medicacion">  </p>
+             <p id="toUp-enfermedadActual">  </p>
+             <p id="toUp-enfermedadPasada">  </p>
+             <p id="toUp-grupoSanguineo">  </p>
+             <p id="toUp-notas">  </p>
+
             </div>
          </div>
-
         </div>
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="bootstrap/popper.min.js"></script>
-        <script src="bootstrap/bootstrap.min.js"></script>
-        <script src="bootstrap/holder.min.js"></script>
         <script src="js/app.js"></script>
         <script src="js/qrcode.js"></script>
     </body>
