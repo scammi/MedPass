@@ -28,16 +28,10 @@ Emergency rooms can be messy, especially if there is a patient that is having a 
 - [x] You will access a webpage, where you fill a form with your medical data. 
 - [x] The information will be push and pin to IPFS network. 
 - [ ] The hash will be place in a stellar transaction 
-- [ ] A QR code will be generated with the stellar transaction 
+- [x] A QR code will be generated with the stellar transaction 
 - [ ] In an emergency, the doctor will scan the QR code 
 - [ ] It will be taken to a page that uses stellar viewer to access the hash 
 - [x] Information is downloaded from IPFS and displayed.
 
 Work needs to be done on the stellar client side.
 
-#### View
-[![medpassimg.png](https://i.postimg.cc/D0JfBN5C/medpassimg.png)](https://postimg.cc/fSshbBGX)
-
-See the uploaded file: 
-
-https://ipfs.io/ipfs/QmYJrAkgy8ifKcKAzHLcqf7QsEFFQHfwsVpihm19wBuhHF
