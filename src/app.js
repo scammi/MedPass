@@ -33,7 +33,7 @@ function medPass() {
 //makes links: ipfs link and download qr link
 function addQrLink(hashAdded){
   //Creates link to file added
-   document.getElementById("link").innerHTML= "https://ipfs.infura.io/ipfs/"+ hashAdded
+   document.getElementById("link").innerHTML= "https://scammi.github.io/MedPass/decrypt.html?hash="+ hashAdded
    var links = document.getElementById("link").innerHTML
    var qrlink = document.getElementById("downloadLink")
    var qrdiv = document.getElementById("qrcode")
@@ -50,13 +50,6 @@ function addQrLink(hashAdded){
 //grabs src from qr code and copies it to download link
 function makeDownloadLink(){
   var qrlink = document.getElementById("downloadLink")
-  var imgsrc = document.getElementsByTagName("img")[0].src
-  qrlink.href = imgsrc
+  qrlink.href = document.getElementsByTagName("img")[0].src
   qrlink.innerHTML = "Click here to downloar your QRcode"
 }
-
-  document.getElementById("butonD").addEventListener("click", display)
-  function display(){
-  var hash = "QmWn7UKhENJAfSpMCqewPrizM6R8byVNSh35XWHbMeE2o1"
-  document.getElementById('hash1').innerHTML = hash
-  }
