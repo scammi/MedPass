@@ -109608,11 +109608,13 @@ function Node (value, prev, next, list) {
       if (err || !res) {
         return console.error('ipfs cat error', err, res)
       }
+      var elementIn = res.toString()
       document.getElementById('hash').innerText = hash
-      document.getElementById('content').innerText = res.toString()
+      var div = document.createElement('div');
+      div.innerHTML= elementIn
+      document.getElementById('content').appendChild(div)
     })
   }
-
 
 const urlParams = new URLSearchParams(window.location.search);
 const myParam = urlParams.get('hash');
