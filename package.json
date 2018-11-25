@@ -7,6 +7,7 @@
   "scripts": {
     "start": "http-server -c-1 -p 12345 public",
     "compile": "browserify src/app.js -o public/js/app.js -d",
+    "prebuild": "browserify src/decrypt.js -o public/js/decrypt.js",
     "build": "browserify src/app.js -o public/js/app.js",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d public"

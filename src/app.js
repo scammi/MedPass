@@ -7,7 +7,7 @@ function medPass() {
     //take from from place it in toUp
     document.getElementById('toUp-nombre').innerHTML = document.getElementById('nombre').value
     document.getElementById('toUp-fechaDeNacimiento').innerHTML = document.getElementById('fechaDeNacimiento').value
-    document.getElementById('toUp-obraSocial').innerHTML = document.getElementById('form-obraSocial').value
+    document.getElementById('toUp-obraSocial').v = document.getElementById('form-obraSocial').value
     document.getElementById('toUp-medicacion').innerHTML = document.getElementById('form-medicacion').value
     document.getElementById('toUp-enfermedadActual').innerHTML = document.getElementById('form-enfermedadActual').value
     document.getElementById('toUp-enfermedadPasada').innerHTML = document.getElementById('form-enfermedadesPasadas').value
@@ -54,3 +54,9 @@ function makeDownloadLink(){
   qrlink.href = imgsrc
   qrlink.innerHTML = "Click here to downloar your QRcode"
 }
+
+  document.getElementById("butonD").addEventListener("click", display)
+  function display(){
+  var hash = "QmWn7UKhENJAfSpMCqewPrizM6R8byVNSh35XWHbMeE2o1"
+  document.getElementById('hash1').innerHTML = hash
+  }
