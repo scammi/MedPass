@@ -109631,7 +109631,7 @@ function medPass() {
 //makes links: ipfs link and download qr link
 function addQrLink(hashAdded){
   //Creates link to file added
-   document.getElementById("link").innerHTML= "https://ipfs.infura.io/ipfs/?="+ hashAdded
+   document.getElementById("link").innerHTML= "https://scammi.github.io/MedPass/decrypt.html?hash="+ hashAdded
    var links = document.getElementById("link").innerHTML
    var qrlink = document.getElementById("downloadLink")
    var qrdiv = document.getElementById("qrcode")
